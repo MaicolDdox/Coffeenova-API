@@ -4,10 +4,10 @@
     </a>
 </p>
 
-[![GitHub followers](https://img.shields.io/github/followers/MaicolDdox?style=social)](https://github.com/MaicolDdox)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Maicol%20Gasca-0A66C2?style=social&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maicol-duvan-gasca-rodas-4483923a4/?trk=public-profile-join-page)
+[![GitHub followers](https://img.shields.io/github/Github/MaicolDdox?style=social)]
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=social&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/maicol-duvan-gasca-rodas-4483923a4/?trk=public-profile-join-page)
 [![Instagram](https://img.shields.io/badge/Instagram-%40maicolddox__-E4405F?style=social&logo=instagram&logoColor=white)](https://www.instagram.com/maicolddox_?utm_source=qr&igsh=cTV6enRlMW05bjY3)
-[![Discord](https://img.shields.io/badge/Discord-Perfil-5865F2?style=social&logo=discord&logoColor=white)](https://discordapp.com/users/1425631850453270543)
+[![Discord](https://img.shields.io/badge/Discord-5865F2?style=social&logo=discord&logoColor=white)](https://discordapp.com/users/1425631850453270543)
 [![Facebook](https://img.shields.io/badge/Facebook-Maicol-1877F2?style=social&logo=facebook&logoColor=white)](https://www.facebook.com/profile.php?id=61586710675179&sk=about_contact_and_basic_info)
 
 <div align="center">
