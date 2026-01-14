@@ -1,61 +1,117 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <a href=""_blank>
+      <img src="docs/assets/logoTipo.png" width="260" alt="Logo de CoffeeNova API">
+    </a>
 </p>
 
-## About Laravel
+<p align="center">
+  <a href="https://www.linkedin.com/in/maicol-duvan-gasca-rodas-4483923a4/?trk=public-profile-join-page" target="_blank" title="LinkedIn" style="text-decoration:none;">
+    <img src="docs/assets/social/linkedin.png" height="22" alt="LinkedIn" style="vertical-align:middle;">
+    <span style="margin-left:6px; vertical-align:middle;">LinkedIn</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.instagram.com/maicolddox_?utm_source=qr&igsh=cTV6enRlMW05bjY3" target="_blank" title="Instagram" style="text-decoration:none;">
+    <img src="docs/assets/social/instagram.png" height="22" alt="Instagram" style="vertical-align:middle;">
+    <span style="margin-left:6px; vertical-align:middle;">Instagram</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/MaicolDdox" target="_blank" title="GitHub" style="text-decoration:none;">
+    <img src="docs/assets/social/github.png" height="22" alt="GitHub" style="vertical-align:middle;">
+    <span style="margin-left:6px; vertical-align:middle;">GitHub</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://discordapp.com/users/1425631850453270543" target="_blank" title="Discord" style="text-decoration:none;">
+    <img src="docs/assets/social/discord.png" height="22" alt="Discord" style="vertical-align:middle;">
+    <span style="margin-left:6px; vertical-align:middle;">Discord</span>
+  </a>
+  &nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="mailto:maicolindustriascode@gmail.com" target="_blank" title="Email" style="text-decoration:none;">
+    <img src="docs/assets/social/gmail.png" height="22" alt="Email" style="vertical-align:middle;">
+    <span style="margin-left:6px; vertical-align:middle;">Email</span>
+  </a>
+</p>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<div align="center">
+  <h1>CoffeeNova API</h1>
+  <p>API REST para el catalogo de cafe, carrito y pedidos de la demo CoffeeNova.</p>
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Descripcion
+CoffeeNova API es un backend en Laravel 12 para una tienda de cafe.
+Incluye autenticacion por tokens (Laravel Sanctum) y roles/permisos (Spatie).
+Permite listar y gestionar cafes, manejar carrito y crear pedidos con checkout simulado.
+Pensada para ejecutar un demo local con datos precargados.
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## Requisitos
+- PHP 8.2+
+- Composer
+- MySQL o MariaDB
+- Node.js + npm (solo si vas a compilar assets con Vite)
 
-## Learning Laravel
+## Instalacion rapida
+```bash
+git clone https://github.com/MaicolDdox/-Coffeenova-API.git
+cd coffeenova-api
+composer install
+```
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+```bash
+# Windows (PowerShell/CMD)
+copy .env.example .env
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+# macOS/Linux
+cp .env.example .env
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+php artisan key:generate
+```
 
-## Laravel Sponsors
+Configura la base de datos en `.env`:
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=backendapi
+DB_USERNAME=root
+DB_PASSWORD=
+```
 
-### Premium Partners
+## Demo y Seeders (OBLIGATORIO)
+**OBLIGATORIO:** Ejecuta los seeders porque:
+- cargan el demo (catalogo de cafes)
+- crean roles y permisos
+- crean la cuenta administradora
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Opcion A:
+```bash
+php artisan migrate --seed
+```
 
-## Contributing
+Opcion B:
+```bash
+php artisan migrate
+php artisan db:seed
+```
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Credenciales Admin (Demo)
+- Email: `admin@coffee.test`
+- Password: `password`
 
-## Code of Conduct
+## Ejecucion
+```bash
+php artisan serve
+```
+La API quedara disponible en `http://127.0.0.1:8000`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Endpoints / Documentacion
+No hay Swagger/Postman incluidos. Revisa `routes/api.php` para la lista completa de rutas.
 
-## Security Vulnerabilities
+## Troubleshooting
+- `APP_KEY` vacia: ejecuta `php artisan key:generate`.
+- `.env` no creado o sin DB correcta: revisa credenciales y crea la base de datos.
+- Errores de permisos en `storage/` o `bootstrap/cache/`: ajusta permisos.
+- Migraciones/seeders no ejecutados: corre `php artisan migrate --seed`.
+- Imagenes locales no se sirven: ejecuta `php artisan storage:link`.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Autor / Creditos
+Este README aplica exclusivamente para **coffeenova-api**.
